@@ -13,7 +13,7 @@ export default function NavBar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Commands", path: "/commands" },
-    { name: "Documentation", path: "https://docs.vunsh.xyz", external: true },
+    { name: "Documentation", path: "/docs" },
     { name: "Status", path: "/status" },
     { name: "Support", path: "https://discord.gg/jfkFJXjVnx", external: true, isSupport: true },
   ];
