@@ -4,7 +4,11 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // Redirect boobismp.vunsh.xyz to Aternos
+      {
+        source: '/boobismp',
+        destination: 'https://BoobiSMP.aternos.me',
+        permanent: false,
+      },
       {
         source: '/:path*',
         has: [
