@@ -1,0 +1,123 @@
+.page {
+  background: #0f0f0f;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 28px; /* smaller padding */
+  background: #0f0f0f;
+  width: 100%;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #343434;
+}
+
+/* --- NAV BUTTONS --- */
+.navButton {
+  color: #a8a8a8;
+  font-weight: 15px;
+  text-decoration: none;
+  margin-left: 14px; /* smaller gap */
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.85rem; /* smaller text */
+  transition: background 0.2s ease;
+}
+
+.navButton:hover {
+  color: #dedede;
+}
+
+.supportButton {
+  background: linear-gradient(90deg, #d2bdcf 0%, #877487 100%);
+  color: #1a0d2f; /* dark text for contrast */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.supportButton:hover {
+  background: linear-gradient(90deg, #e6cce0 0%, #9b8699 100%); /* lighter gradient on hover */
+}
+
+.supportButton.active {
+  background: linear-gradient(90deg, #d2bdcf 0%, #877487 100%); /* keep gradient when active */
+}
+
+
+/* --- SEARCH BAR --- */
+.navCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px; /* narrower */
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  pointer-events: none;
+  width: 14px; /* smaller icon */
+  height: 14px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 12px 8px 34px; /* slightly smaller padding */
+  border-radius: 6px;
+  border: 1px solid #343434;
+  outline: none;
+  background: #0f0f0f;
+  color: #fff;
+  font-size: 0.85rem; /* smaller font */
+  caret-color: #767676;
+  transition: border 0.2s ease, background 0.2s ease;
+}
+
+.searchInput:focus {
+  background: #1a1a1a;
+  color: #b0b0b0;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navRight {
+  display: flex;
+  align-items: center; /* vertically center buttons */
+  gap: 12px;           /* space between buttons */
+}
+
+
+
+.disabledButton {
+  cursor: default;
+  background-color: #333333;
+  pointer-events: none; /* not clickable */
+}
+
+.disabledButton:hover {
+  background: inherit; /* prevent hover background change */
+}
