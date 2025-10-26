@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import DiscordIcon from "../public/Discord.svg";
-import styles from "../styles/NavBar.module.css";
+import styles from "../styles/navbar.module.css";
 
 export default function NavBar() {
   const router = useRouter();
