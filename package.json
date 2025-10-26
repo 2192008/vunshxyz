@@ -1,37 +1,15 @@
 {
-  "name": "website",
+  "name": "my-new-project",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
-},
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start"
+  },
   "dependencies": {
-    "@react-three/drei": "^10.0.8",
-    "@react-three/fiber": "^9.1.2",
-    "axios": "^1.9.0",
-    "bcrypt": "^6.0.0",
-    "bcryptjs": "^3.0.2",
-    "cookie": "^1.0.2",
-    "dotenv": "^16.5.0",
-    "jsonwebtoken": "^9.0.2",
-    "maxmind": "^4.3.27",
-    "mongoose": "^8.15.0",
-    "next": "15.3.2",
-    "next-auth": "^4.24.11",
-    "nodemailer": "^6.10.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "three": "^0.176.0"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3.0.0",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "15.3.2"
-  },
-  "engines": {
-    "node": ">=18.18.0"
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "next": "16.0.0"
   }
 }
