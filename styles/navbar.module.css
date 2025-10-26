@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 15px;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: transparent;
+  color: #cecece;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #cecece;
+}
+
+.navbar ul li a.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cecece;
+}
+
+/* Support button */
+.navbar ul li a.support {
+  background: linear-gradient(90deg, #d2bdcf 0%, #877487 100%);
+  color: #1a0d2f; /* dark text for contrast */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li a.support:hover {
+  background: linear-gradient(90deg, #e6cce0 0%, #9b8699 100%); /* lighter gradient on hover */
+}
+
+.navbar ul li a.support.active {
+  background: linear-gradient(90deg, #d2bdcf 0%, #877487 100%); /* keep gradient when active */
+}
