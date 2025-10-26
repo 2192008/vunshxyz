@@ -1,5 +1,5 @@
 import Background from "@/components/Background";
-import styles from "../styles/construction.module.css";
+import styles from "../../styles/construction.module.css";
 import NavBar from "@/components/NavBar";
 
 export default function () {
